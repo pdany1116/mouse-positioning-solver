@@ -1,0 +1,12 @@
+screen: [5120.0, 1440.0]
+window:
+  position: [947.0, 394.0, 781.0, 532.0]
+buttons:
+  start:
+    position: [79.0, 0.0, 20.0, 2.0]
+  stop:
+    position: [79.0, 2.0, 20.0, 2.0]
+pointers:
+  position: [1600.0, 426.0]
+  target: [1570.0, 501.0]
+level: 3.0
