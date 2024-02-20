@@ -161,7 +161,6 @@ targetPosition = floor([xfin, yfin]);
 
 gameInfo.pointers.position = pointerPosition;
 gameInfo.pointers.target = targetPosition;
-gameInfo.level = Level - 1;
 
 yaml.dumpFile("game_info.yaml", gameInfo);
 
@@ -294,6 +293,10 @@ function LevelSlider_Callback(hObject, eventdata, handles)
 global level;
 level = get(hObject,'Value');
 set(handles.Level,'String',num2str(level-1));
+
+global gameInfo;
+gameInfo.level = level - 1;
+yaml.dumpFile("game_info.yaml", gameInfo);
 
 
 % --- Executes during object creation, after setting all properties.
