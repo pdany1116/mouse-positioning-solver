@@ -201,16 +201,13 @@ while(counter < TimeLim && stopflag == false) % keep the dot there for 2.5 secon
     
 %% Store red ball and mouse real time positions
 global redDotRealTimePosition;
-global mouseRealTimePosition;
+clear redDotRealTimePosition;
 
-clear redDotRealTimePosition mouseRealTimePosition;
 redDotRealTimePosition.x = x;
 redDotRealTimePosition.y = y;
+
 yaml.dumpFile("red_dot_real_time_position.yaml", redDotRealTimePosition);
 
-mouseRealTimePosition.x = PL(1);
-mouseRealTimePosition.y = PL(2);
-yaml.dumpFile("mouse_real_time_position.yaml", mouseRealTimePosition);
 %%
     % Display position
     plot(xfin,yfin,'ko','MarkerSize',20)
