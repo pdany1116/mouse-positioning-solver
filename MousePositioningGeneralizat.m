@@ -85,7 +85,8 @@ axis([1,xmax,1,ymax]);
 %% Store game info in YAML Format
 
 global gameInfo;
-
+set(handles.StartButton,'Units','pixels');
+set(handles.StopButton,'Units','pixels');
 windowPosition = floor(get(handles.figure1, 'Position'));
 StartButtonPosition = floor(get(handles.StartButton, 'Position'));
 StopButtonPosition = floor(get(handles.StopButton, 'Position'));
