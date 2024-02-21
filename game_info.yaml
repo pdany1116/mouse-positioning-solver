@@ -1,4 +1,4 @@
-screen: [2560.0, 1440.0]
+screen: [1920.0, 1080.0]
 window:
   position: [951.0, 398.0, 771.0, 539.0]
 buttons:
@@ -6,7 +6,7 @@ buttons:
     position: [559.0, 4.0, 141.0, 34.0]
   stop:
     position: [559.0, 45.0, 141.0, 32.0]
+level: 1.0
 pointers:
   position: [1511.0, 402.0]
-  target: [1127.0, 727.0]
-level: 1.0
+  target: [788.0, 343.0]
